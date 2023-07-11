@@ -231,49 +231,48 @@ form {
   }
 }
 
-/* @media screen and (min-width: 1438px) {
-    .form{
+@media screen and (min-width: 1438px) {
+  .form {
     padding: 30px;
     margin-left: 60px;
     max-width: 800px;
-    }
-  
-    .form .field {
-      height: 70px;
-    }
-  
-    .logo-shelf h1 {
-      position: absolute;
-      top: 0;
-      padding: 50px 60px;
-      margin-left: 1.5rem;
-      color: white;
-      font-size: 4rem;
-      font-weight: 700;
   }
-  
-.form p {
-  font-size: 1rem;
-  color: #d1cece;
-  font-weight: 600;
-}
-.register {
-  line-height: 2.3rem;
-}
 
-.create-form {
-  font-size: 3rem;
-  font-weight: 700;
-  color: #fff;
-}
+  .form .field {
+    height: 70px;
+  }
 
-.bxs-circle {
-  color: #041c64;
-  font-size: 2rem;
-}
+  .logo-shelf h1 {
+    position: absolute;
+    top: 0;
+    padding: 50px 60px;
+    margin-left: 1.5rem;
+    color: white;
+    font-size: 4rem;
+    font-weight: 700;
+  }
 
-.welcome-form-text {
-  font-size: 2rem;
+  .form p {
+    font-size: 1rem;
+    color: #d1cece;
+    font-weight: 600;
+  }
+  .register {
+    line-height: 2.3rem;
+  }
+
+  .create-form {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #fff;
+  }
+
+  .bxs-circle {
+    color: #041c64;
+    font-size: 2rem;
+  }
+
+  .welcome-form-text {
+    font-size: 2rem;
+  }
 }
-}
- */
