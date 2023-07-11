@@ -61,6 +61,7 @@
   position: absolute;
   text-transform: uppercase;
   top: 0;
+  left: -2%;
   padding: 60px 30px 30px 30px;
   color: white;
   font-size: 3rem;
@@ -143,7 +144,7 @@ form {
 
 .eye-icon {
   font-size: 18px;
-  color: #fff;
+  color: #4070f4;
   cursor: pointer;
   position: absolute;
   right: 3%;
@@ -153,14 +154,14 @@ form {
 
 .detail-profile {
   font-size: 18px;
-  color: #fff;
+  color: #4070f4;
   position: absolute;
   right: 3%;
   top: 30%;
 }
 
 .detail-card {
-  color: #fff;
+  color: #4070f4;
   position: absolute;
   right: 55.5%;
   top: 30%;
@@ -168,7 +169,7 @@ form {
 }
 
 .detail-card-1 {
-  color: #fff;
+  color: #4070f4;
   position: absolute;
   right: 3%;
   top: 30%;
@@ -176,6 +177,11 @@ form {
 }
 
 /* Media querries */
+@media screen and (max-width: 319px) {
+  .logo-shelf {
+    font-size: 2rem;
+  }
+}
 @media screen and (max-width: 767px) {
   .detail-card {
     right: 57%;
@@ -213,9 +219,28 @@ form {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767px) {
   .form {
     padding: 30px;
+    margin-left: 2rem;
+    margin-top: 40px;
+  }
+
+  form {
+    margin-top: 4rem;
+  }
+
+  .logo-shelf h1 {
+    top: 10%;
+    padding: 0 60px;
+    left: -0.1%;
+  }
+  .detail-card {
+    right: 54%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .form {
     margin-left: 6rem;
     margin-top: 40px;
   }
@@ -230,49 +255,3 @@ form {
     left: 4%;
   }
 }
-
-/* @media screen and (min-width: 1438px) {
-  .form {
-    padding: 30px;
-    margin-left: 60px;
-    max-width: 800px;
-  }
-
-  .form .field {
-    height: 70px;
-  }
-
-  .logo-shelf h1 {
-    position: absolute;
-    top: 0;
-    padding: 50px 60px;
-    margin-left: 1.5rem;
-    color: white;
-    font-size: 4rem;
-    font-weight: 700;
-  }
-
-  .form p {
-    font-size: 1rem;
-    color: #d1cece;
-    font-weight: 600;
-  }
-  .register {
-    line-height: 2.3rem;
-  }
-
-  .create-form {
-    font-size: 3rem;
-    font-weight: 700;
-    color: #fff;
-  }
-
-  .bxs-circle {
-    color: #041c64;
-    font-size: 2rem;
-  }
-
-  .welcome-form-text {
-    font-size: 2rem;
-  }
-} */
