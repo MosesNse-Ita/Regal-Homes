@@ -138,7 +138,7 @@ form {
 }
 
 .field button:hover {
-  background-color: transparent; /*#4070f4*/
+  background-color: #bcbcbc;
   color: #fff;
 }
 
