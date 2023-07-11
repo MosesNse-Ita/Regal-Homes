@@ -176,6 +176,12 @@ form {
   font-size: 18px;
 }
 
+.form-link {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-top: 1rem;
+}
+
 /* Media querries */
 @media screen and (max-width: 319px) {
   .logo-shelf {

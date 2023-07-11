@@ -22,14 +22,34 @@
       <div class="form login">
         <div class="form-content">
           <div class="register">
-            <h4 class="welcome-form-text">Welcome Back</h4>
-            <h1 class="create-form">Login <i class="bx bxs-circle"></i></h1>
+            <h4 class="welcome-form-text">Register For Free</h4>
+            <h1 class="create-form">
+              Create new account<i class="bx bxs-circle"></i>
+            </h1>
             <p class="already-a-member">
-              Don't have an account yet?
-              <a href="./signup.html" class="login-link">Sign Up</a>
+              Already a member?
+              <a href="./signin.html" class="login-link">Log In</a>
             </p>
           </div>
           <form action="#">
+            <div class="field inputfield input-div-space">
+              <input
+                type="text"
+                class="inputme"
+                id="inputName"
+                placeholder="First Name"
+              />
+              <i class="bx bx-id-card detail-card"></i>
+
+              <input
+                type="text"
+                class="inputme input-gap"
+                id="inputName"
+                placeholder="Last Name"
+              />
+              <i class="bx bx-id-card detail-card-1"></i>
+            </div>
+
             <div class="field inputfield">
               <input
                 type="email"
@@ -49,11 +69,13 @@
               />
               <i class="bx bx-hide eye-icon"></i>
             </div>
-            <div class="field button-field">
-              <button id="signup">Login</button>
-            </div>
-            <div class="form-link">
+
+            <!-- <div class="form-link">
               <a href="#" class="forget-pass">Forgot Password?</a>
+            </div> -->
+
+            <div class="field button-field">
+              <button id="signup">Create Account</button>
             </div>
           </form>
         </div>
