@@ -231,7 +231,7 @@ form {
   }
 }
 
-@media screen and (min-width: 1438px) {
+/* @media screen and (min-width: 1438px) {
   .form {
     padding: 30px;
     margin-left: 60px;
@@ -275,4 +275,4 @@ form {
   .welcome-form-text {
     font-size: 2rem;
   }
-}
+} */
