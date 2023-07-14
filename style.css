@@ -8,6 +8,9 @@
   font-family: "Josefin Sans", sans-serif;
 }
 
+html {
+  overflow: hidden;
+}
 .container {
   height: 100vh;
   width: 100%;
@@ -98,13 +101,13 @@ form {
   height: 100%;
   width: 50%;
   border: none;
-  border: 1px solid #cacaca;
+  border: 2px solid #cacaca;
   outline: none;
   border-radius: 12px;
   font-size: 16px;
   font-weight: 600;
   padding: 0 15px;
-  color: #fff;
+  color: black;
   background-color: #fff;
 }
 .field .input,
@@ -112,12 +115,12 @@ form {
   height: 100%;
   width: 100%;
   outline: none;
-  border: 1px solid #cacaca;
+  border: 2px solid #cacaca;
   border-radius: 12px;
   font-size: 16px;
   font-weight: 600;
   padding: 0 15px;
-  color: #fff;
+  color: black;
   background-color: #fff;
 }
 .field button {
@@ -138,8 +141,17 @@ form {
 }
 
 .field button:hover {
-  background-color: #bcbcbc;
+  background-color: #bcbcbc; /*4070f4 */
   color: #fff;
+}
+.check span {
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.none {
+  display: none;
 }
 
 .eye-icon {
@@ -150,6 +162,13 @@ form {
   right: 3%;
   top: 30%;
   /* transform: translateY(-50%); */
+}
+
+.check {
+  padding: 10px 0 0 10px;
+}
+.checkbox {
+  cursor: pointer;
 }
 
 .detail-profile {
@@ -180,6 +199,7 @@ form {
   font-size: 1.3rem;
   font-weight: 600;
   margin-top: 1rem;
+  padding-left: 0.8rem;
 }
 
 /* Media querries */
@@ -260,4 +280,354 @@ form {
     padding: 0 60px;
     left: 4%;
   }
+}
+
+/* Index Page Style/First Page */
+.header-index {
+  display: flex;
+  justify-content: space-between;
+  padding: 0rem 5rem 0 9rem;
+  align-items: center;
+  width: 100%;
+  height: 15%;
+  position: relative;
+  background-color: #4070f4;
+  cursor: pointer;
+}
+
+.header-index h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #fff;
+}
+.header-index h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  padding-left: 8rem;
+  color: #fff;
+}
+/* -----------Carousel Beginning------ */
+
+.index_container {
+  background-image: /*linear-gradient(
+      85deg,
+      rgba(64, 112, 244, 0.9075775573901436) 7%,
+      rgba(64, 112, 244, 0.8739641120119923) 14%,
+      rgba(64, 112, 244, 0.8151405826002276) 57%,
+      rgba(64, 112, 244, 0) 100%
+    ),*/ url(./Assets/dream\ home.webp);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  position: relative;
+  width: 100%;
+  animation: bgChange 20s alternate-reverse infinite;
+}
+
+.index_container .bx {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-left: 0.6rem;
+  cursor: pointer;
+  color: #fff;
+}
+
+/* -------Keyframes------- */
+@keyframes bgChange {
+  0% {
+    background-image: url(./Assets/dream\ home.webp);
+  }
+  20% {
+    background-image: url(./Assets/todd-kent-178j8tJrNlc-unsplash.jpg);
+  }
+  25% {
+    background-image: url(./Assets/florian-schmidinger-b_79nOqf95I-unsplash.jpg);
+  }
+  45% {
+    background-image: url(./Assets/bernard-hermant-KqOLr8OiQLU-unsplash.jpg);
+  }
+  50% {
+    background-image: url(./Assets/fomstock-4ojhpgKpS68-unsplash.jpg);
+  }
+  70% {
+    background-image: url(./Assets/webaliser-_TPTXZd9mOo-unsplash.jpg);
+  }
+  75% {
+    background-image: url(./Assets/istockphoto-1177123315-612x612-transformed.jpeg);
+  }
+  95% {
+    background-image: url(./Assets/evelyn-paris-XJnP4L958ds-unsplash.jpg);
+  }
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* -----Carousel image end ------ */
+
+/* --------Swiping Text---- */
+/* (A) FORCE SLIDES INTO SINGLE ROW */
+/* (C2) MOVE SLIDES */
+
+.move {
+  display: flex;
+  animation: slideh linear 8s infinite;
+  position: relative;
+}
+
+.move h1 {
+  font-size: 3.5rem;
+  color: #fff;
+  font-weight: 700;
+}
+.move h2 {
+  font-size: 1.5rem;
+  color: #fff;
+  font-weight: 500;
+}
+
+.move:hover {
+  animation-play-state: paused;
+}
+
+.moving {
+  width: 100%;
+  height: 100%;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* (B) OUTER WRAPPER HIDE SCROLLBAR */
+.movewrap {
+  overflow: hidden;
+  position: relative;
+  top: 22%;
+}
+
+/* (C) SHIFT SLIDES WITH CSS ANIMATION */
+/* (C1) SLIDES POSITION */
+
+@keyframes slideh {
+  0% {
+    right: 0;
+  }
+  30% {
+    right: 0;
+  }
+  33% {
+    right: 100%;
+  }
+  63% {
+    right: 100%;
+  }
+  66% {
+    right: 200%;
+  }
+  97% {
+    right: 200%;
+  }
+  0% {
+    right: 0;
+  }
+}
+
+/* --------Swiping Text end---- */
+
+/* -----Logo---- */
+/* .logo-index h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: white;
+}
+
+.logo-index p {
+  font-size: 1.1rem;
+  color: #bcbcbc;
+  padding-left: 3.4rem;
+  transform: translateX(30%);
+  font-weight: 600;
+  font-style: italic;
+} */
+
+/* swiper css */
+/* .slideshow-container {
+  max-width: 500px;
+  width: 40%;
+  position: relative;
+  margin: 4rem 0 0 9rem;
+  margin: auto;
+}
+
+.slideshow-container .showroom {
+  width: 100%;
+  height: 100%;
+  border-radius: 1px;
+  cursor: pointer;
+}
+
+.slideshow-container .mySlides {
+  border: 4px solid #fff;
+  height: 400px;
+  background: rgb(0, 0, 0); Fallback color
+  background: rgba(0, 0, 0, 0.5); Black background with 0.5 opacity
+}
+
+.info {
+  position: absolute;
+  bottom: 6.6%;
+  right: 0;
+  background: rgb(0, 0, 0); Fallback color
+  background: rgba(0, 0, 0, 0.5); Black background with 0.5 opacity
+  color: #f1f1f1;
+  width: 100%;
+  text-align: center;
+  height: 25%;
+  padding: 20px;
+} */
+
+/* The dots/bullets/indicators */
+/* .dotwrap {
+  margin: 1rem 0 0 0;
+  display: flex;
+  justify-content: center;
+}
+.dot {
+  cursor: pointer;
+  height: 12px;
+  width: 12px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-flex;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+} */
+
+/* Fading animation */
+/* .fade {
+  animation-name: fade;
+  animation-duration: 0.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 22px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  transition: 3.5s ease-in;
+
+  transform: scaleX(1);
+} */
+
+/* Position the "next button" to the right */
+/* .next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+} */
+
+/* On hover, add a black background color with a little bit see-through */
+/* .prev:hover,
+.next:hover {
+  background: rgb(188, 188, 188);
+  background: linear-gradient(
+    90deg,
+    rgba(188, 188, 188, 0.8722927403383228) 0%,
+    rgba(188, 188, 188, 0.5725728523831408) 50%,
+    rgba(217, 217, 217, 0.5501638887977065) 100%
+  );
+  transform: scaleX(0);
+} */
+
+/* Button */
+.buttonwrap {
+  position: absolute;
+  bottom: 38%;
+  right: 35%;
+}
+
+.buttonwrap button {
+  height: 55px;
+  width: 150px;
+  font-size: 25px;
+  font-weight: 500;
+  border-radius: 8px;
+  border: none;
+  margin-left: 4rem;
+  background-color: #fff;
+  color: #4070f4;
+  cursor: pointer;
+}
+
+.buttonwrap button:hover {
+  background-color: #4070f4;
+  color: #bcbcbc;
+  transition: 0.3s ease-in-out;
+}
+
+/* Footer */
+footer {
+  background-color: rgba(0, 0, 0, 0.9);
+  border-radius: 1.5rem 1.5rem 0 0;
+  height: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 1.5rem;
+  position: relative;
+  margin: auto;
+  top: 63.6%;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  color: white;
+  cursor: pointer;
+}
+
+.copyright {
+  text-align: center;
+  color: #bcbcbc;
+}
+
+.mySlides {
+  /* display: none; */
+}
+.showroom {
+  /* vertical-align: middle; */
 }

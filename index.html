@@ -12,8 +12,174 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
     />
+
+    <!-- Swiper carousel -->
   </head>
   <body>
-    <a href="./signup.html">Click Me</a>
+    <section class="index_container">
+      <div class="overlay"></div>
+
+      <!-- Logo -->
+      <header class="header-index">
+        <div class="logo-index">
+          <h1>Regal Homes</h1>
+          <h3>You think it, we birth it</h3>
+        </div>
+        <!-- dark/light -->
+        <div class="modewrap">
+          <i class="bx bxs-moon"></i>
+          <i class="bx bx-sun"></i>
+        </div>
+      </header>
+
+      <!-- Swiping text -->
+      <div class="movewrap">
+        <div class="move">
+          <div class="moving">
+            <h1>Regal At Your Service</h1>
+            <h2>
+              Land Purchase,Housing Purchase, Building construction... Leave
+              them to Us
+            </h2>
+          </div>
+          <div class="moving">
+            <h1>Let Help Make Your Abode Regal</h1>
+            <h2>Get Your Dream Home With Comfort</h2>
+          </div>
+          <div class="moving">
+            <h1>Big Sales</h1>
+            <h2>Hectares Of Land Available</h2>
+          </div>
+          <div class="moving">
+            <h1>We make Palace From all houses</h1>
+            <h2>Everyone deserves to rest comfortable like king</h2>
+          </div>
+          <div class="moving">
+            <h1>Be A Honourable land Owner Today</h1>
+            <h2>Land Lords Grow rich in their sleep, be one.</h2>
+          </div>
+          <div class="moving">
+            <h1>land Is Land There Is no Lost in acquring.</h1>
+            <h2>Having A Home Is Self Fulfilling,Own One.</h2>
+          </div>
+        </div>
+      </div>
+      <!-- Just Html and css carousel -->
+      <!-- <div class="slideshow-container">
+        <div class="mySlides fade">
+          <img
+            src="./Assets/bernard-hermant-KqOLr8OiQLU-unsplash.jpg"
+            class="showroom"
+          />
+          <div class="info">Find The Best Homes</div>
+        </div>
+
+        <div class="mySlides fade">
+          <img
+            src="./Assets/evelyn-paris-XJnP4L958ds-unsplash.jpg"
+            class="showroom"
+          />
+          <div class="info">Real Estate</div>
+        </div>
+
+        <div class="mySlides fade">
+          <img
+            src="./Assets/florian-schmidinger-b_79nOqf95I-unsplash.jpg"
+            class="showroom"
+          />
+          <div class="info">House Leasing</div>
+        </div>
+        <div class="mySlides fade">
+          <img
+            src="./Assets/outsite-co-R-LK3sqLiBw-unsplash.jpg"
+            class="showroom"
+          />
+          <div class="info">House Leasing</div>
+        </div>
+        <div class="mySlides fade">
+          <img
+            src="./Assets/istockphoto-172255093-612x612-transformed.jpeg"
+            class="showroom"
+          />
+          <div class="info">House Leasing</div>
+        </div>
+        <div class="mySlides fade">
+          <img
+            src="./Assets/webaliser-_TPTXZd9mOo-unsplash.jpg"
+            class="showroom"
+          />
+          <div class="info">House Leasing</div>
+        </div> -->
+
+      <!-- carousel Prev and next -->
+      <!-- <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a> -->
+
+      <!-- carousel Dots -->
+      <!-- <div class="dotwrap">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+          <span class="dot" onclick="currentSlide(5)"></span>
+          <span class="dot" onclick="currentSlide(6)"></span>
+        </div>
+      </div> -->
+      <!-- <br /> -->
+      <!-- Just HTML And css carousel End -->
+
+      <!-- ------------- New carousel ------ -->
+
+      <!-- Sign In buttons -->
+      <div class="buttonwrap">
+        <a href="./signup.html" class="index_link"><button>Signup</button></a>
+        <a href="./signin.html" class="index_link"><button>Login</button></a>
+      </div>
+
+      <!-- footer -->
+      <footer>
+        <div class="footer">
+          <h1>REGAL HOMES</h1>
+          <h3>Tel: +234 8078959070</h3>
+        </div>
+        <div class="copyright">
+          <p>&#169; REGAL HOMES All Right Reserved</p>
+        </div>
+      </footer>
+    </section>
+
+    <!--Just Html and css Script -->
+    <!-- <script>
+      let slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
+      }
+
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+      }
+
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+    </script> -->
   </body>
 </html>

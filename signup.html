@@ -28,7 +28,7 @@
             </h1>
             <p class="already-a-member">
               Already a member?
-              <a href="./signin.html" class="login-link">Log In</a>
+              <a href="./signin.html" class="login-link">LogIn</a>
             </p>
           </div>
           <form action="#">
@@ -66,13 +66,19 @@
                 class="password"
                 id="inputPassword"
                 placeholder="Password"
+                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                title="Must contain at least one number and one uppercase and
+                 lowercase letter, and at least 8 or more characters"
+                required
               />
-              <i class="bx bx-hide eye-icon"></i>
+              <!-- <i class="bx bx-hide eye-icon"></i> -->
             </div>
 
-            <!-- <div class="form-link">
-              <a href="#" class="forget-pass">Forgot Password?</a>
-            </div> -->
+            <!-- Show Password -->
+            <div class="check">
+              <input type="checkbox" class="checkbox" onclick="myFunction()" />
+              <span>Show Password</span>
+            </div>
 
             <div class="field button-field">
               <button id="signup">Create Account</button>
@@ -81,5 +87,22 @@
         </div>
       </div>
     </section>
+
+    <!-- javascript -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-auth.js"></script>
+    <script src="./app.js"></script>
+
+    <!-- Show Password -->
+    <script>
+      function myFunction() {
+        var password = document.getElementById("inputPassword");
+        if (password.type === "password") {
+          password.type = "text";
+        } else {
+          password.type = "password";
+        }
+      }
+    </script>
   </body>
 </html>
