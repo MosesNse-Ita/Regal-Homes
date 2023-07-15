@@ -441,6 +441,289 @@ form {
   }
 }
 
+/* Button */
+.buttonwrap {
+  position: absolute;
+  bottom: 38%;
+  left: 27%;
+}
+
+.buttonwrap button {
+  height: 55px;
+  /* position: fixed; */
+  width: 150px;
+  font-size: 25px;
+  font-weight: 500;
+  border-radius: 8px;
+  border: none;
+  margin-left: 4rem;
+  background-color: #fff;
+  color: #4070f4;
+  cursor: pointer;
+}
+
+.buttonwrap button:hover {
+  background-color: #4070f4;
+  color: #bcbcbc;
+  transition: 0.3s ease-in-out;
+}
+
+/* Footer */
+footer {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 1.5rem 1.5rem 0 0;
+  height: 12%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 1.5rem;
+  position: relative;
+  margin: auto;
+  bottom: 0%;
+  position: fixed;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  color: white;
+  cursor: pointer;
+}
+
+.copyright {
+  text-align: center;
+  color: #bcbcbc;
+}
+
+/* -------Media query ---- */
+@media screen and (min-width: 1435px) {
+  footer {
+    /* top: 65.9%; */
+    line-height: 4rem;
+  }
+
+  .buttonwrap {
+    left: 22.5%;
+  }
+
+  .buttonwrap a button {
+    height: 90px;
+    width: 300px;
+    font-size: 40px;
+  }
+
+  footer .footer h3,
+  h1 {
+    font-size: 35px;
+  }
+  footer .footer h1,
+  h1 {
+    font-size: 35px;
+  }
+
+  footer .copyright {
+    font-size: 20px;
+  }
+
+  .movewrap .move .moving h1 {
+    font-size: 4.5rem;
+  }
+  .movewrap .move .moving h2 {
+    font-size: 2rem;
+  }
+
+  .index_container .header-index h1 {
+    font-size: 5rem;
+  }
+  .index_container .header-index h3 {
+    font-size: 2rem;
+    font-weight: 500;
+    padding-left: 10rem;
+  }
+
+  .index_container .bx {
+    font-size: 2.8rem;
+    font-weight: 700;
+  }
+}
+
+@media screen and (min-width: 765px) {
+  footer {
+    /* top: 59.6%; */
+  }
+
+  .header-index {
+    padding: 0.5rem 3rem 0 5rem;
+  }
+
+  .buttonwrap {
+    left: 18.5%;
+  }
+
+  .buttonwrap button {
+    height: 50px;
+    width: 140px;
+    font-size: 30px;
+  }
+
+  .footer h3,
+  h1 {
+    font-size: 20px;
+  }
+
+  .copyright {
+    font-size: 13px;
+  }
+
+  .move h1 {
+    font-size: 2.5rem;
+  }
+  .move h2 {
+    font-size: 1.1rem;
+  }
+
+  .header-index h1 {
+    font-size: 2.7rem;
+  }
+  .header-index h3 {
+    font-size: 1rem;
+    font-weight: 500;
+    padding-left: 6.4rem;
+  }
+
+  .index_container .bx {
+    font-size: 1.7rem;
+    font-weight: 700;
+  }
+}
+@media screen and (max-width: 321px) {
+  .buttonwrap {
+    /* right: 0%; */
+    display: flex;
+    margin-left: -2rem;
+  }
+
+  .movewrap {
+    line-height: 1.5rem;
+  }
+  .movewrap .move .moving h1 {
+    font-size: 1.3rem;
+    font-weight: 700;
+  }
+  .movewrap .move .moving h2 {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+  .header-index h1 {
+    font-size: 2rem;
+  }
+
+  .header-index h3 {
+    font-size: 0.8rem;
+    font-weight: 500;
+    padding-left: 0.4rem;
+  }
+}
+@media screen and (max-width: 427px) {
+  footer {
+    /* top: 52.6%; */
+  }
+
+  .header-index {
+    padding: 0.5rem 3rem 0 3rem;
+  }
+
+  .buttonwrap {
+    left: 2.5%;
+  }
+
+  .buttonwrap button {
+    height: 40px;
+    width: 100px;
+    font-size: 18px;
+  }
+
+  .footer h3,
+  h1 {
+    font-size: 15px;
+  }
+
+  .copyright {
+    font-size: 10px;
+  }
+
+  .move h1 {
+    font-size: 2.2rem;
+  }
+  .move h2 {
+    font-size: 1.1rem;
+    font-weight: 500;
+  }
+
+  .header-index h1 {
+    font-size: 2rem;
+  }
+
+  .header-index h3 {
+    font-size: 0.8rem;
+    font-weight: 500;
+    padding-left: 0.4rem;
+  }
+
+  .index_container .bx {
+    font-size: 1.7rem;
+    font-weight: 700;
+  }
+}
+
+@media screen and (min-width: 1020px) {
+  footer {
+    /* top: 58.6%; */
+  }
+
+  .header-index h1 {
+    font-size: 3.5rem;
+  }
+  .index_container .header-index h3 {
+    font-size: 1.3rem;
+    font-weight: 500;
+    padding-left: 7.9rem;
+  }
+  .buttonwrap {
+    left: 23%;
+  }
+
+  .buttonwrap a button {
+    height: 60px;
+    width: 180px;
+    font-size: 30px;
+  }
+
+  footer .footer h3,
+  h1 {
+    font-size: 26px;
+  }
+  footer .footer h1,
+  h1 {
+    font-size: 26px;
+  }
+
+  footer .copyright {
+    font-size: 15px;
+  }
+
+  .movewrap .move .moving h1 {
+    font-size: 3.5rem;
+  }
+  .movewrap .move .moving h2 {
+    font-size: 1.6rem;
+  }
+}
+
 /* --------Swiping Text end---- */
 
 /* -----Logo---- */
@@ -570,60 +853,6 @@ form {
   );
   transform: scaleX(0);
 } */
-
-/* Button */
-.buttonwrap {
-  position: absolute;
-  bottom: 38%;
-  right: 35%;
-}
-
-.buttonwrap button {
-  height: 55px;
-  width: 150px;
-  font-size: 25px;
-  font-weight: 500;
-  border-radius: 8px;
-  border: none;
-  margin-left: 4rem;
-  background-color: #fff;
-  color: #4070f4;
-  cursor: pointer;
-}
-
-.buttonwrap button:hover {
-  background-color: #4070f4;
-  color: #bcbcbc;
-  transition: 0.3s ease-in-out;
-}
-
-/* Footer */
-footer {
-  background-color: rgba(0, 0, 0, 0.9);
-  border-radius: 1.5rem 1.5rem 0 0;
-  height: 10%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  line-height: 1.5rem;
-  position: relative;
-  margin: auto;
-  top: 63.6%;
-}
-
-.footer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 2rem;
-  color: white;
-  cursor: pointer;
-}
-
-.copyright {
-  text-align: center;
-  color: #bcbcbc;
-}
 
 .mySlides {
   /* display: none; */
