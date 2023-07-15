@@ -203,9 +203,10 @@ form {
 }
 
 /* Media querries */
-@media screen and (max-width: 319px) {
-  .logo-shelf {
-    font-size: 2rem;
+@media screen and (max-width: 321px) {
+  .container .logo-shelf h1 {
+    font-size: 2.1rem;
+    padding-left: 20px;
   }
 }
 @media screen and (max-width: 767px) {
