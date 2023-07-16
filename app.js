@@ -26,7 +26,7 @@ signUpButton.addEventListener("click", (e) =>{
    .createUserWithEmailAndPassword(email.value, password.value)
    .then((userCredential) => {
        location.reload();
-       alert("user signed up successful");
+       alert("Sign up successful");
 
        //signed in
        var user = userCredential.user;
