@@ -5,6 +5,8 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Josefin Sans", sans-serif;
+  text-decoration: none;
+  list-style: none;
 }
 /* ----header/nav---- */
 .l-header {
@@ -13,21 +15,44 @@
   position: fixed;
   background-color: #3498db;
   top: 0;
+  padding: 25px 3.5rem 0px 4rem;
   left: 0;
+  z-index: 1;
 }
 
 .nav {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: center;
 }
+
+/* UL list */
+.nav__menus {
+  /* margin-left: 20rem; */
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.nav-item .nav-links {
+  font-size: 1.4rem;
+  color: #fff;
+}
+
 /* ----Logo--- */
 .logo-name {
-  font-size: 1rem;
+  font-size: 2.3rem;
   color: #fff;
   font-weight: 700;
 }
 .dropbtn {
-  color: #3498db;
+  color: #fff;
   font-size: 22px;
   cursor: pointer;
 }
@@ -65,4 +90,11 @@
 
 .show {
   display: block;
+}
+
+/* Media Querry */
+@media screen and (min-width: 767px) {
+  .nav__menu {
+    display: none;
+  }
 }
