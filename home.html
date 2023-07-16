@@ -36,7 +36,7 @@
     </script>
   </head>
   <body>
-    <header class="l-header">
+    <header class="l-header" id="header">
       <nav class="nav">
         <div class="logo">
           <h1 class="logo-name">REGAL HOMES</h1>
@@ -50,12 +50,11 @@
           </ul>
           <!-- ----Profile--- -->
           <div class="dropdown">
-            <!-- <button onclick="myFunction()" class="dropbtn"></button> -->
             <i class="bx bxs-user-circle dropbtn" onclick="myFunction()"></i>
             <div id="myDropdown" class="dropdown-content">
               <p class="profile" id="user">User Profile:</p>
               <button class="log__out" id="signout" type="submit">
-                Logout
+                Signout
               </button>
             </div>
           </div>
@@ -74,9 +73,14 @@
       </nav>
     </header>
 
+    <img src="./Assets/bernard-hermant-KqOLr8OiQLU-unsplash.jpg" alt="" />
+    <img src="./Assets/bernard-hermant-KqOLr8OiQLU-unsplash.jpg" alt="" />
+    <img src="./Assets/bernard-hermant-KqOLr8OiQLU-unsplash.jpg" alt="" />
+    <img src="./Assets/bernard-hermant-KqOLr8OiQLU-unsplash.jpg" alt="" />
     <!-- -----Script----- -->
     <script src="./signout.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-auth.js"></script>
+    <script src="./main.js"></script>
   </body>
 </html>
