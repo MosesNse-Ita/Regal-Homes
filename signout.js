@@ -9,8 +9,8 @@
   };
 
   // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
-  const auth = firebase.auth();
+firebase.initializeApp(firebaseConfig);
+const auth = firebase.auth();
 
 auth.onAuthStateChanged(function (user){
   if (user){
