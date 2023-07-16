@@ -1,17 +1,16 @@
-// Your web app's Firebase configuration
-const firebaseConfig = {
-  apiKey: "AIzaSyB_PgIFBjQLYiSo5l80loVsbtIgH93Wy64",
-  authDomain: "regal-homes.firebaseapp.com",
-  projectId: "regal-homes",
-  storageBucket: "regal-homes.appspot.com",
-  messagingSenderId: "731839041326",
-  appId: "1:731839041326:web:e2dd3ad671722ef6bc74bf"
-};
+  // Your web app's Firebase configuration
+  const firebaseConfig = {
+    apiKey: "AIzaSyB_PgIFBjQLYiSo5l80loVsbtIgH93Wy64",
+    authDomain: "regal-homes.firebaseapp.com",
+    projectId: "regal-homes",
+    storageBucket: "regal-homes.appspot.com",
+    messagingSenderId: "731839041326",
+    appId: "1:731839041326:web:e2dd3ad671722ef6bc74bf"
+  };
 
-   // Initialize Firebase
-   firebase.initializeApp(firebaseConfig);
-   const auth = firebase.auth();
- 
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  const auth = firebase.auth();
 
 auth.onAuthStateChanged(function (user){
   if (user){
@@ -23,8 +22,8 @@ auth.onAuthStateChanged(function (user){
 
       //is signed in
   } else {
-      alert("user not authenticated, kindly login or signup");
-      window.location = "signin.html";
+      alert("User not authenticated, kindly login or signup");
+      window.location = "index.html";
   }
 });
 
@@ -36,5 +35,5 @@ signOutButton.addEventListener("click", (e) => {
   console.log("logout clicked");
   auth.signOut();
   alert("Signed out");
-  window.location = "./signin.html";
+  window.location = "./index.html";
 })

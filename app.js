@@ -1,5 +1,5 @@
-// Your web app's Firebase configuration
-const firebaseConfig = {
+  // Your web app's Firebase configuration
+  const firebaseConfig = {
     apiKey: "AIzaSyB_PgIFBjQLYiSo5l80loVsbtIgH93Wy64",
     authDomain: "regal-homes.firebaseapp.com",
     projectId: "regal-homes",
@@ -7,11 +7,11 @@ const firebaseConfig = {
     messagingSenderId: "731839041326",
     appId: "1:731839041326:web:e2dd3ad671722ef6bc74bf"
   };
-  
-     // Initialize Firebase
-     firebase.initializeApp(firebaseConfig);
-     const auth = firebase.auth();
-   
+
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+ const auth = firebase.auth();
+ 
    //signup function
    let signUpButton = document.getElementById("signup");
    signUpButton.addEventListener("click", (e) =>{
