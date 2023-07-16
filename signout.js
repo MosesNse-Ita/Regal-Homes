@@ -8,7 +8,7 @@
     appId: "1:731839041326:web:e2dd3ad671722ef6bc74bf"
   };
 
-  // Initialize Firebase
+ //Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 const auth = firebase.auth();
 
@@ -22,7 +22,7 @@ auth.onAuthStateChanged(function (user){
 
       //is signed in
   } else {
-      alert("User not authenticated, kindly login or signup");
+      alert("user not authenticated, kindly login or signup");
       window.location = "index.html";
   }
 });
