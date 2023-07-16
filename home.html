@@ -3,7 +3,77 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ---title-- -->
     <title>Regal Homes</title>
+    <!-- -----box icon----- -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+    <!-- -----css---- -->
+    <link rel="stylesheet" href="./home.css" />
+    <!-- Internal script  -->
+    <script>
+      /* When the user clicks on the button, 
+      toggle between hiding and showing the dropdown content */
+      function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
+
+      // Close the dropdown if the user clicks outside of it
+      window.onclick = function (event) {
+        if (!event.target.matches(".dropbtn")) {
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains("show")) {
+              openDropdown.classList.remove("show");
+            }
+          }
+        }
+      };
+    </script>
   </head>
-  <body></body>
+  <body>
+    <header class="l-header">
+      <nav class="nav">
+        <div class="logo">
+          <h1 class="logo-name">REGAL HOMES</h1>
+        </div>
+        <div class="nav__menu">
+          <ul class="nav-list">
+            <li class="nav-item"><a href="#" class="nav-links">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-links">About us</a></li>
+            <li class="nav-item"><a href="#" class="nav-links">Explore</a></li>
+            <li class="nav-item"><a href="#" class="nav-links">Contact</a></li>
+          </ul>
+        </div>
+        <div class="dropdown">
+          <!-- <button onclick="myFunction()" class="dropbtn"></button> -->
+          <i class="bx bxs-user-circle dropbtn" onclick="myFunction()"></i>
+          <div id="myDropdown" class="dropdown-content">
+            <p class="profile" id="user">User Profile:</p>
+            <button class="log__out" id="signout" type="submit">Logout</button>
+          </div>
+        </div>
+
+        <!-- Mobile View----- -->
+        <div class="nav__menu">
+          <ul class="nav-list">
+            <li class="nav-item"><a href="#" class="nav-links">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-links">About us</a></li>
+            <li class="nav-item"><a href="#" class="nav-links">Explore</a></li>
+            <li class="nav-item"><a href="#" class="nav-links">Contact</a></li>
+          </ul>
+          <!-- <i class="bx bxs-user-circle"></i> -->
+        </div>
+      </nav>
+    </header>
+
+    <!-- -----Script----- -->
+    <script src="./signout.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-auth.js"></script>
+  </body>
 </html>
