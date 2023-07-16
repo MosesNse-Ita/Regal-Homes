@@ -26,12 +26,12 @@ const firebaseConfig = {
        .createUserWithEmailAndPassword(email.value, password.value)
        .then((userCredential) => {
            location.reload();
-           alert("user signed up successful");
+           alert("Sign Up successful");
    
            //signed in
            var user = userCredential.user;
            console.log("user, user.email");
-           window.location = "signin.html";
+           window.location = "home.html";
        })
 
        .catch((error)=>{
@@ -58,7 +58,7 @@ const firebaseConfig = {
            var user = userCredential.user;
            console.log("user", user.email);
            window.location = "home.html";
-           alert("Logged In successful");
+           alert("Log In successful");
        })
    
        .catch((error) => {
