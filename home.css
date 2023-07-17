@@ -573,6 +573,9 @@ hr {
 
   .logo .logo-name {
   }
+  .ads-img {
+    margin: 20px;
+  }
 }
 
 @media screen and (max-width: 1438px) {
