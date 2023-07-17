@@ -6,24 +6,24 @@
     <!-- ---title-- -->
     <title>Regal Homes</title>
     <!-- -----box icon----- -->
+
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
     />
     <!-- -----css---- -->
     <link rel="stylesheet" href="./home.css" />
-    <!-- Internal script  -->
   </head>
   <body>
     <header class="l-header" id="header">
-      <nav class="nav">
-        <div class="logo">
-          <h1 class="logo-name">REGAL HOMES</h1>
-        </div>
+      <div class="logo">
+        <h1 class="logo-name">REGAL HOMES</h1>
+      </div>
+      <nav class="nav" id="nav-bar">
         <div class="nav__menus">
           <ul class="nav-list">
             <li class="nav-item"><a href="#" class="nav-links">Home</a></li>
-            <li class="nav-item"><a href="#" class="nav-links">About us</a></li>
+            <li class="nav-item"><a href="#" class="nav-links">About</a></li>
             <li class="nav-item"><a href="#" class="nav-links">Explore</a></li>
             <li class="nav-item"><a href="#" class="nav-links">Contact</a></li>
           </ul>
@@ -39,20 +39,255 @@
           </div>
         </div>
 
+        <!-- nav__toggle -->
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="bx bx-menu" id="open"></i>
+        </div>
         <!-- Mobile View----- -->
-        <div class="nav__menu">
-          <ul class="nav-lists">
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav-list">
             <li class="nav-item"><a href="#" class="nav-links">Home</a></li>
             <li class="nav-item"><a href="#" class="nav-links">About us</a></li>
             <li class="nav-item"><a href="#" class="nav-links">Explore</a></li>
             <li class="nav-item"><a href="#" class="nav-links">Contact</a></li>
           </ul>
-          <!-- <i class="bx bxs-user-circle"></i> -->
         </div>
       </nav>
     </header>
 
+    <!-- Just Html and css carousel -->
+    <section class="section1">
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <img
+            src="./Assets/todd-kent-178j8tJrNlc-unsplash.jpg"
+            class="showroom"
+          />
+          <div class="gradient"></div>
+          <div class="info">
+            <h1 class="headline">Find The Best Homes With Us</h1>
+            <p class="subheadline">
+              We Build Peaceful abode for a healthy mind.
+            </p>
+          </div>
+        </div>
+
+        <div class="mySlides fade">
+          <img
+            src="./Assets/evelyn-paris-XJnP4L958ds-unsplash.jpg"
+            class="showroom"
+          />
+          <div class="gradient"></div>
+
+          <div class="info">
+            <h1 class="headline">Sustainability is in our DNA.</h1>
+            <p class="subheadline">
+              Regal Houses are specialists in country homes <br />and off
+              grid-houses.
+            </p>
+          </div>
+        </div>
+
+        <div class="mySlides fade">
+          <img
+            src="./Assets/florian-schmidinger-b_79nOqf95I-unsplash.jpg"
+            class="showroom"
+          />
+          <div class="gradient"></div>
+
+          <div class="info">
+            <h1 class="headline">BYO Designs</h1>
+            <p class="subheadline">
+              Have a design but no builder? Speak to us about <br />pricing your
+              custom design.
+            </p>
+          </div>
+        </div>
+
+        <div class="mySlides fade">
+          <img
+            src="./Assets/outsite-co-R-LK3sqLiBw-unsplash.jpg"
+            class="showroom"
+          />
+          <div class="gradient"></div>
+
+          <div class="info">
+            <h1 class="headline">Apartments</h1>
+            <p class="subheadline">
+              We specialize in creating exceptional living spaces for modern
+              renters.
+            </p>
+          </div>
+        </div>
+
+        <div class="mySlides fade">
+          <img src="./Assets/dream home.webp" class="showroom" />
+          <div class="gradient"></div>
+
+          <div class="info">
+            <h1 class="headline">Construction</h1>
+            <p class="subheadline">
+              Our services involves knocking down and renovation.
+            </p>
+          </div>
+        </div>
+
+        <!-- carousel Prev and next -->
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+
+        <!-- carousel Dots -->
+        <div class="dotwrap">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+          <span class="dot" onclick="currentSlide(5)"></span>
+          <span class="dot" onclick="currentSlide(6)"></span>
+        </div>
+      </div>
+
+      <!-- Just HTML And css carousel End -->
+    </section>
+
+    <!-- 2 section Our services -->
+    <section class="our__services">
+      <div class="servicehead"><h1 class="service">Our Services</h1></div>
+      <div class="servicewrap">
+        <div class="serviceimg">
+          <img
+            src="./AssetS/etienne-girardet-sgYamIzhAhg-unsplash.jpg"
+            class="service-img"
+            alt=""
+          />
+          <a href="#" class="servicelink"
+            ><p class="servicetag">Renovate Or Extend</p></a
+          >
+        </div>
+        <div class="serviceimg">
+          <img
+            src="./AssetS/hopers-studio-hfI0pr6g4yw-unsplash.jpg"
+            class="service-img"
+            alt=""
+          />
+          <a href="#" class="servicelink"
+            ><p class="servicetag">Knockdown And Rebuild</p></a
+          >
+        </div>
+        <div class="serviceimg">
+          <img
+            src="./AssetS/istockphoto-168721057-1024x1024-transformed.webp"
+            class="service-img"
+            alt=""
+          />
+          <a href="#" class="servicelink"
+            ><p class="servicetag">Custom Home Design</p></a
+          >
+        </div>
+        <div class="serviceimg">
+          <img
+            src="./AssetS/vertical-shot-white-building-clear-sky.jpg"
+            class="service-img"
+            alt=""
+          />
+          <a href="#" class="servicelink"
+            ><p class="servicetag">Build In The Country</p></a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- 3rd section -->
+    <section>
+      <div class="advert">
+        <div class="ads">
+          <p class="adss">
+            Designed for <br />your<strong>Family,<br />Built </strong>by ours.
+          </p>
+          <p class="adds">
+            Celebrating years of building <br />beautiful homes from Lagos to
+            <br />South Africa and everywhere in <br />between.
+          </p>
+        </div>
+        <img
+          src="./Assets/images-5TflQ_nnQ-transformed.jpeg"
+          alt=""
+          class="ads-img"
+        />
+      </div>
+    </section>
+
+    <section class="swipe-ads">
+      <!-- swiping ads -->
+
+      <div class="movewrap">
+        <div class="move">
+          <div class="moving">
+            <i class="bx bxs-quote-alt-right quote"></i>
+            <p class="movetext">
+              Thank you all for your help in getting us in to our <br />new
+              house-you all @Regal Homes are welcome <br />
+              anytime for goat meat peppersoup.
+            </p>
+            <p>Ademola ROtimi</p>
+            <p class="movecustomer">Regal Homes Customer</p>
+          </div>
+          <div class="moving">
+            <i class="bx bxs-quote-alt-right quote"></i>
+            <p class="movetext">
+              It would not have been possible without the <br />
+              exceptional effort of your dedicated team.
+            </p>
+            <p class="movecustomer">Bat Jago</p>
+            <p class="movecustomer">Regal Homes Customer</p>
+          </div>
+          <div class="moving">
+            <i class="bx bxs-quote-alt-right quote"></i>
+            <p class="movetext">
+              There was no nasty surprises or hidden costs <br />after the
+              building work had started.
+            </p>
+            <p class="movecustomer">Chief Charles Bola Jamai</p>
+            <p class="movecustomer">Regal Homes Customer</p>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- -----Script----- -->
+    <!-- Internal script  -->
+    <!--Just Html and css Script -->
+    <script>
+      let slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
+      }
+
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+      }
+
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+    </script>
     <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-auth.js"></script>
     <script src="./signout.js"></script>
