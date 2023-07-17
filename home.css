@@ -491,8 +491,29 @@ hr {
 .copyright {
   padding: 30px;
   text-align: center;
+  color: #bcbcbc;
+  cursor: pointer;
 }
 
+.footer-logo {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.days {
+  color: #fff;
+  font-weight: 400;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.adslogo {
+  color: #fff;
+  font-size: 2.5rem;
+  font-style: 600;
+}
 /* Media Querry */
 @media screen and (min-width: 811px) {
   .nav__menu {
