@@ -8,6 +8,9 @@
   text-decoration: none;
   list-style: none;
 }
+body {
+  overflow-x: hidden;
+}
 
 /* ----header/nav---- */
 .l-header {
@@ -629,7 +632,7 @@ hr {
   }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 430px) {
   .headline {
     font-size: 1.4rem;
     text-align: center;
@@ -664,7 +667,7 @@ hr {
     height: 200px;
   }
   .dropbtn {
-    font-size: 10px;
+    font-size: 40px;
   }
 
   .log__out {
@@ -679,6 +682,10 @@ hr {
     font-size: 1rem;
     top: 60%;
   }
+
+  .logo .logo-name {
+    font-size: 2rem;
+  }
 }
 
 @media screen and (max-width: 375px) {
@@ -691,8 +698,5 @@ hr {
 
   .section1 {
     padding: 0;
-  }
-  .logo .logo-name {
-    font-size: 1.3rem;
   }
 }
