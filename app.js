@@ -31,7 +31,7 @@ signUpButton.addEventListener("click", (e) =>{
        //signed in
        var user = userCredential.user;
        console.log("user, user.email");
-       window.location = "home.html";
+       window.location = "signin.html";
 
    })
 
